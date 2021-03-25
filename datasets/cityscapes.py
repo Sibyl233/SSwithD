@@ -10,7 +10,6 @@ import numpy as np
 class Cityscapes(data.Dataset):
     """Cityscapes <http://www.cityscapes-dataset.com/> Dataset.
     """
-
     # Based on https://github.com/mcordts/cityscapesScripts
     CityscapesClass = namedtuple('CityscapesClass', ['name', 'id', 'train_id', 'category', 'category_id',
                                                      'has_instances', 'ignore_in_eval', 'color'])
@@ -114,7 +113,7 @@ class Cityscapes(data.Dataset):
         return len(self.images)
 
 
-
+# Test
 if __name__ == "__main__":
     data_root = '/data/kdn/Dataset/Cityscapes'
     train_dst = Cityscapes(root=data_root,
